@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+svg * {
+  fill: black !important;
+  stroke: black !important;
+  transition-property: fill, stroke;
+}
+
+svg {
+  width: 20px;
+  height: auto;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  column-gap: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.container {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.summary {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+}
+.summary-description {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  color: black;
+}
+.specialty {
+  color: #7c7b7b;
+}
+.contacts {
+  display: flex;
+  padding: 50px;
+  background-color: #aeabab;
+}
+
+.about {
+  padding: 50px;
+}
+/*  */
+.projects {
+  margin-bottom: 50px;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.projects-list {
+  padding: 0;
+  margin-left: 15px;
+}
+
+.projects-item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.project,
+.project-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+.project-link {
+  margin-left: 10px;
+}
+.project-bracket {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+/* education styles */
+.education-position {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.university {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.period {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+}
+.line {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+}
+.exp {
+  padding: 0;
+}
+.courses-list {
+  display: block;
+  padding: 0;
+}
+.courses-list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+.education {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.proffesion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #7c7b7b;
+  /* color: rgb(83, 79, 79); */
+}
+
+.tech-skills,
+.soft-skills,
+.hobbies {
+  margin-left: 40px;
+}
+.tech-skills {
+  margin-bottom: 45px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.skill {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+.about-me {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+  color: black;
+}
+
+@media (max-width: 1014px){
+.contacts-type {
+   display: flex;
+  flex-wrap: wrap;
+}
+
+a{
+  display: block;
+  flex-wrap: wrap;
+}
+}
+
+@media (max-width: 864px){
+.contacts {
+  display: block;
+  flex-wrap: wrap;
+}
+.contacts-type{
+   display: flex;
+  flex-wrap: nowrap;
+}
+ul{
+  flex-wrap: wrap;
+}
+
+}
