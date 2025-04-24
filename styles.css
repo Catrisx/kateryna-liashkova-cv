@@ -56,12 +56,36 @@ a {
 .specialty {
   color: #7c7b7b;
 }
+
 .contacts {
-  display: flex;
-  padding: 50px;
+  padding: 20px 0px 20px 50px;
   background-color: #aeabab;
 }
-
+.contacts-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 120px;
+}
+.contacts-column {
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contacts-left {
+  padding-left: 40px;
+  text-align: left;
+}
+.contacts-right {
+  text-align: left;
+}
+.contacts-item {
+  display: block;
+}
+.contacts-type {
+  padding: 10px;
+}
 .about {
   padding: 50px;
 }
@@ -200,29 +224,92 @@ a {
   color: black;
 }
 
-@media (max-width: 1014px){
-.contacts-type {
-   display: flex;
-  flex-wrap: wrap;
-}
-
-a{
+.portfolio-list {
   display: block;
-  flex-wrap: wrap;
+  padding: 0;
 }
-}
-
-@media (max-width: 864px){
-.contacts {
-  display: block;
-  flex-wrap: wrap;
-}
-.contacts-type{
-   display: flex;
-  flex-wrap: nowrap;
-}
-ul{
-  flex-wrap: wrap;
+.portfolio-list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
 }
 
+.portfolio-description {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.portfolio-heading {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1014px) {
+  .contacts {
+    padding: 5px 0px 5px 45px;
+  }
+  .contacts-columns {
+    display: flex;
+    padding-top: 0;
+  }
+  .contacts-left {
+    padding-bottom: 0;
+  }
+  .contacts-right {
+    padding-top: 0;
+    padding-left: 40px;
+  }
+  .contacts-type {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts-link {
+    padding-top: 0;
+    margin: 0;
+    padding-left: 10;
+  }
+  a {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 864px) {
+  .contacts {
+    display: block;
+    flex-wrap: wrap;
+    padding: 5px 0px 5px 45px;
+  }
+  .contacts-columns {
+    display: block;
+  }
+  .contacts-left,
+  .contacts-right {
+    padding: 10px;
+  }
+  .contacts-left {
+    padding-bottom: 0;
+  }
+  .contacts-right {
+    padding-top: 0;
+  }
+  .contacts-type {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .contacts-link {
+    padding-top: 0;
+    margin: 0;
+    padding-left: 10;
+  }
+  ul {
+    flex-wrap: wrap;
+  }
 }
